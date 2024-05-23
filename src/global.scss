@@ -1,0 +1,83 @@
+
+
+
+  
+  $mainColor: #15023a;
+
+
+$textColor: #222222;
+$textColor_dark: white;
+
+$back_w:white;
+$back_w2:rgb(223, 225, 226);
+
+// $back_dark:#222222;
+$back_dark:#22262a;
+// $back_dark1:#3b3b3b;
+$back_dark1:#2d3d4a;
+
+
+$mainColor_back: white;
+.oo{
+  color: #700e01;
+  color: #d53600;
+  color: 	#010048;
+  color: 	#010057;
+  color: 	#02006c;
+  color: 	#003747;
+  color: 		#065465;
+  color: 		#0995b4;
+  color: 		#222222;
+  color: 		#3b3b3b;
+  color: 		#2c4c3b;
+  color: 		#1e453e
+}
+
+body{
+
+  // background-color:#3b3b3b;
+}
+
+$Mobile: 480px;
+$Tablets: 768px;
+$laptops: 1024px;
+$Desktops: 1200px;
+$screensTv: 1201px;
+
+// -----------------------------------------------
+@mixin mobile {
+  @media (max-width: #{$Mobile}) {
+    @content;
+  }
+}
+// -----------------------------------------------
+@mixin tablet {
+  @media (min-width: #{$Mobile + 1}) and (max-width: #{$Tablets}) {
+    @content;
+  }
+}
+// -----------------------------------------------
+@mixin laptops {
+  @media (min-width: #{$Tablets + 1}) and (max-width: #{$laptops}) {
+    @content;
+  }
+}
+// -----------------------------------------------
+@mixin Desktops {
+  @media (min-width: #{$laptops + 1}) and (max-width: #{$Desktops}) {
+    @content;
+  }
+}
+// -----------------------------------------------
+@mixin screensTv {
+  @media (min-width: #{$screensTv}) {
+    @content;
+  }
+}
+// -----------------------------------------------
+
+// 320px — 480px: Mobile devices
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+// 1025px — 1200px: Desktops, large screens
+// 1201px and more —  Extra large screens, TV

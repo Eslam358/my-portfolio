@@ -1,0 +1,41 @@
+@import "./global.scss";
+
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s;
+}
+
+.app {
+  // height: 100vh;
+  overflow: hidden;
+
+  &.dark {
+    background-color: $back_dark !important;
+    color: $textColor_dark;
+    .sections > *:nth-child(odd) {
+      background-color: $back_dark1 !important;
+    }
+    .sections > *:nth-child(even) {
+      background-color: $back_dark !important;
+    }
+  }
+  &.light {
+    background-color: $back_w;
+    color: $textColor;
+    .sections > *:nth-child(even) {
+      background-color: $back_w2 !important;
+    }
+  }
+  .sections {
+    margin-top: 74px;
+    height: calc(100vh - 74px);
+    overflow-x: hidden;
+
+    > *:not(:nth-child(1)):not(:nth-child(2)) {
+    }
+    > *:nth-child(1) {
+    }
+  }
+}

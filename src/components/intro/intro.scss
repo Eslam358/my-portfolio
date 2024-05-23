@@ -1,0 +1,53 @@
+@import "../../global.scss";
+
+.intro {
+  display: flex;
+  align-items: center;
+
+  padding: 10px;
+  gap: 20px;
+  padding-bottom: 90px;
+
+
+  @include  tablet{
+    flex-direction: column;
+    text-align: center;
+    }
+  @include  mobile{
+  flex-direction: column;
+  text-align: center;
+  
+}
+  .back_img{
+    background-color: rgb(197, 37, 37);
+    width: 70vw;
+    height: 70vw;
+    max-height: 700px;
+    max-width: 700px;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+  .text  {
+    min-width: 201px;
+      min-height: 90px;
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+}
+.dark .back_img {
+  background-color:#0995b4;
+
+}
+// .text{
+
+  
+// }
+// }
