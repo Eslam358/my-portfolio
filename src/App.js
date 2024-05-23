@@ -30,14 +30,14 @@ function App() {
     <div className={dark ? "app dark" : "app light"}>
       <Prodeutscontext>
         <Topbar />
-        {/* <Toolbar /> */}
+        <Toolbar />
         <Menu dark={dark} setdark={setdark} />
       </Prodeutscontext>
 
       <div className="sections">
         <Portfoliocontext>
           <Intro />
-          {/* <Portfolio /> */}
+          <Portfolio />
           <Works />
           <Testimonials />
           <Contact />
