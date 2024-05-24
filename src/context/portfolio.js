@@ -10,7 +10,7 @@ import {
 
 export const maincontext_por = createContext();
 const Portfolio_context = (props) => {
-  const [list, setlist] = useState([
+  const [list] = useState([
     "Netlify",
     "Design",
     "Featured",
@@ -21,11 +21,8 @@ const Portfolio_context = (props) => {
   const [selected, setselected] = useState("Netlify");
   const [portfolio, setportfolio] = useState([]);
   useEffect(() => {
-    console.log(designPortfolio);
-    console.log(featuredPortfolio);
     switch (selected) {
       case "Design":
-        console.log("Design");
         setportfolio(designPortfolio);
         break;
       case "Featured":

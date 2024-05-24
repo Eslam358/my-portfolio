@@ -1,8 +1,7 @@
 import "./intro.scss";
 import React, { useState, useEffect } from "react";
-// import Hello from "./typing";
 
-import { Box } from "@mui/material";
+
 import { init } from "ityped";
 
 const Intro = () => {

@@ -31,9 +31,10 @@
         justify-content: space-around;
         align-items: center;
         padding:10px 70px 50px;
-        .icon{
-          transform:rotateX(180deg);
-          font-size: 30px;
+        svg{
+          
+          width: 30px;
+        
           
         }
 
@@ -83,6 +84,12 @@
 
 .dark .testimonials .card{
   background-color:#065465;
+.title {
+  svg{
+    fill: white;
+  }
+}
+
   .info{
     p{
       background-color:#066479;

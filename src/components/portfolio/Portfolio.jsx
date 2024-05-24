@@ -22,11 +22,8 @@ const Portfolio = () => {
       .then((a) => a.json())
       .then((data) => {
         setmyDataGet(data);
-        console.log("DataGet", data);
-        console.log("myDataGet", myDataGet);
       })
       .catch((er) => {
-        console.log("error", er);
       });
     // .......................................................
     fetch(
@@ -40,8 +37,8 @@ const Portfolio = () => {
         return data;
       })
       .catch((er) => {
-        console.log("error", er);
       });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const CardPortfolio = (

@@ -3,7 +3,6 @@ import { useContext } from "react";
 import { maincontext_por } from "../../context/portfolio";
 const Portoliolist = () => {
   const { list, setselected, selected } = useContext(maincontext_por);
-  console.log(selected);
 
   return (
     <div className="list-li">

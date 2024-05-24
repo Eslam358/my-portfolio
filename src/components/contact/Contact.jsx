@@ -6,9 +6,7 @@ const Contact = () => {
   const Email = useRef();
   const Message_ref = useRef();
   const [Sent, setSent] = useState(false);
-  function submitForm(event) {
-    event.preventDefault();
-  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
   };

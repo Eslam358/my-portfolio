@@ -11,7 +11,15 @@
   height: 74px;
   background-color: inherit;
   color: inherit;
-
+.info{
+  svg{
+    fill:inherit ;
+    width: 20px;
+    position: relative;
+    margin-right: 9px;
+    top: 5px;
+  }
+}
   &.active {
     background-color: $mainColor;
     color: $mainColor_back !important;
@@ -19,6 +27,14 @@
     .info {
       color: $mainColor_back !important;
       background-color: $mainColor !important;
+      div{
+
+        svg{
+          fill: $mainColor_back  ;
+        
+
+        }
+      }
     }
     .logo span svg {
       fill: $mainColor_back !important;
@@ -172,6 +188,9 @@
   }
   @include tablet {
     background-color: $back_dark;
+  }
+  svg{
+    fill: $mainColor_back;
   }
 }
 .light .topbar .info {

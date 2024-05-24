@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { maincontext } from "../../context/context_open";
 
 const Menu = ({ dark, setdark }) => {
-  const { mainpro, toggleDrawer } = useContext(maincontext);
+  const { mainpro } = useContext(maincontext);
 
   return (
     <div className={mainpro ? "menu active" : "menu "}>

@@ -1,6 +1,5 @@
 import Topbar from "./components/topbar/Topbar";
-import { useContext, useEffect, useState } from "react";
-import Toolbar from "@mui/material/Toolbar";
+import { useEffect, useState } from "react";
 import Menu from "./components/menu/Menu";
 import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
@@ -12,14 +11,12 @@ import Portfoliocontext from "./context/portfolio";
 import "./app.scss";
 
 function App() {
-  console.log(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
   const [dark, setdark] = useState(false);
   useEffect(() => {
     setdark(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", (event) => {
   
     setdark(event.matches)
-    console.log(event.matches)
   });
 
   }, []);
@@ -30,7 +27,6 @@ function App() {
     <div className={dark ? "app dark" : "app light"}>
       <Prodeutscontext>
         <Topbar />
-        <Toolbar />
         <Menu dark={dark} setdark={setdark} />
       </Prodeutscontext>
 
