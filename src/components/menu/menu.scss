@@ -14,11 +14,10 @@
   &.active {
     transform: translateX(0);
   }
-  .dark_light{
+  .dark_light {
     cursor: pointer;
     margin: 30px auto;
     width: 30px;
-  
   }
 
   .list {
@@ -33,18 +32,18 @@
       list-style: none;
       gap: 30px;
       li {
-        span{
+        span {
           transition: 0.3s;
           height: 2px;
           width: 0;
           display: block;
         }
         &:hover {
-          span{
+          transform: scale(1.1);
+          span {
             width: 100%;
-            background-color:rgb(252, 251, 250);
+            background-color: rgb(252, 251, 250);
           }
-
         }
         a {
           font-size: 25px;
