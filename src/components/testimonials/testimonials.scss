@@ -8,7 +8,13 @@
     text-align: center;
     h2 {
       font-size: 55px;
-      font-weight: 900;
+      font-weight: 900; 
+      @include mobile {
+        font-size: 35px;
+      }
+      @include tablet {
+        font-size: 35px;
+      }
     }
   }
   .container {
@@ -23,9 +29,13 @@
       background-color: white;
       box-shadow: 0px 0px 8px 0px #999;
       width: 350px;
-      padding: 33px 10px 45px;
+      padding: 30px 10px 45px;
       border-radius: 10px;
       transition: 0.3s;
+      @include mobile {
+        width: 300px;
+      }
+    
       .title{
         display: flex;
         justify-content: space-around;

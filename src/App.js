@@ -13,18 +13,22 @@ import "./app.scss";
 function App() {
   const [dark, setdark] = useState(false);
   useEffect(() => {
-    setdark(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", (event) => {
-  
-    setdark(event.matches)
-  });
-
+    setdark(
+      window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+    );
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (event) => {
+        setdark(event.matches);
+      });
   }, []);
-
 
   return (
     // <div className="app dark">
-    <div className={dark ? "app dark" : "app light"}>
+    <div
+      className={dark ? "app dark  " : "app light "}
+    >
       <Prodeutscontext>
         <Topbar />
         <Menu dark={dark} setdark={setdark} />

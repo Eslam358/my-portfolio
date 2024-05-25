@@ -12,7 +12,7 @@ const Intro = () => {
       init(myElementRef, {
         showCursor: false,
 
-        strings: ["frontEnd Developer", "Eslam!"],
+        strings: ["frontEnd Developer", "Use with React.js!","Use with Vue.js!"],
       });
     }
   }, [myElementRef]);

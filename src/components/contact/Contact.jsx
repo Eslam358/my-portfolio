@@ -46,6 +46,7 @@ const Contact = () => {
       
         <div className="Message">
           {Sent && <h3>Thanks, I'll reply ASAP :</h3>}
+          ooooooooooo
         </div>
       </div>
     </div>
