@@ -51,12 +51,12 @@ const Portfolio = () => {
           </div>
           <div className="button">
             <div className="show">
-              <a target="_blank" href={data.build_settings.repo_url}>
+              <a target="_blank" href={data.build_settings.repo_url}  rel="noreferrer">
                 <button>Repo</button>
               </a>
             </div>
             <div className="gethup">
-              <a target="_blank" href={`https://${data.default_domain}`}>
+              <a target="_blank" href={`https://${data.default_domain}`}  rel="noreferrer">
                 <button target="_blank">show</button>
               </a>
             </div>
@@ -85,12 +85,12 @@ const Portfolio = () => {
             <div className="title">{data.name}</div>
             <div className="button">
               <div className="show">
-                <a href={data.html_url} target="_blank">
+                <a href={data.html_url} target="_blank"  rel="noreferrer">
                   <button>Repo</button>
                 </a>
               </div>
               <div className="gethup">
-                <a href={`https://${data.default_domain}`} target="_blank">
+                <a href={`https://${data.default_domain}`} target="_blank"  rel="noreferrer">
                   <button>show</button>
                 </a>
               </div>
